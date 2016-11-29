@@ -1,0 +1,103 @@
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.24
+*/
+.owl-pagination{ display:none;}
+.app_text{ float:left; width:100%; text-align:center;}
+.app_text p{ float:left; width:100%; text-align:center; font-size:0.875em; color:#999; line-height:30px; margin-top:10px; height:30px; overflow:hidden;}
+.app_text span{ float:left; width:100%; text-align:center; font-size:0.75em; color:#CCC;}
+.item:hover .app_text p{ color:#6bc30d;}
+.item:hover .app_text span{ color:#333;}
+ #owl-demo .item{
+        margin: 30px;
+    }
+    #owl-demo .item img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+.owl-theme .owl-controls{
+	margin-top: 40px;
+	text-align: center;
+	
+}
+
+/* Styling Next and Prev buttons */
+.owl-prev{ left:0; background:url(../Images/btnys_l.png) no-repeat center;}
+.owl-next{  right:0;  background:url(../Images/btnys_r.png) no-repeat center;}
+.owl-theme .owl-controls .owl-buttons div{
+	color: #fff;
+	font-weight:bolder;
+	display: inline-block;
+	text-indent: -9999px;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	margin: 5px;
+	padding: 20px 10px;
+	font-size: 1.5em;
+	font-family:"宋体";
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;position:absolute; top:30%;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=90);/*IE7 fix*/
+	opacity: 0.9;
+	text-decoration: none;
+	
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	width:10%;
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 100%;
+	height: 3px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	background: #e0e0e0;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	background: #6bc30d;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(AjaxLoader.gif) no-repeat center center
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+	.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	width:10px;
+}
+.app_text p{ font-size:0.75em;}
+}
+@media only screen and (max-width: 320px) {
+}
